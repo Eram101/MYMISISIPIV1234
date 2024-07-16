@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neton Hotspot Template - Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.0.18/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.js"></script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="bg-gray-900 text-white font-sans antialiased">
+
+  <!-- Sticky Header -->
+  <header class="bg-gray-800 text-white fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo and title area -->
+        <div class="flex items-center">
+          <img src="logo.png" alt="Your Company Logo" class="h-8 w-8 mr-2">
+          <h1 class="text-xl font-bold">Neton</h1>
+        </div>
+        <!-- Navigation Links and Contact Number -->
+        <div class="block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#alreadyHavePackage" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Already Paid? Click Here.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="pt-24">
+    <section class="bg-gray-800 text-white">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold mb-6">We Provide Fast, Cheap and Reliable Wifi Connection Near You. Get connected today</h2>
+        <!-- Pricing Section -->
+        <div class="mt-10">
+          <div class="text-center">
+            <h3 class="text-2xl leading-8 font-extrabold tracking-tight sm:text-3xl sm:leading-9">
+              CHECK OUR PRICING
+            </h3>
+            <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-400 lg:mx-auto">
+              Choose the plan that fits your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mt-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+        <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+          <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+            30 Minutes Unlimited
+          </span>
+          <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+            <span class="text-lg font-medium text-gray-400">ksh</span> 5
+          </div>
+          <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+            30 Mins Unlimited
+          </p>
+        </div>
+        <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+          <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+             onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="1" data-router-id="1">
+            Click Here To Connect
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+        <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+          <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+            1 Hour Unlimited
+          </span>
+          <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+            <span class="text-lg font-medium text-gray-400">ksh</span> 10
+          </div>
+          <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+            1 Hour Unlimited
+          </p>
+        </div>
+        <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+          <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+             onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="2" data-router-id="1">
+            Click Here To Connect
+          </a>
+        </div>
+      </div>
+      <!-- Add more pricing plans here as needed -->
+    </div>
+  </main>
+
+  <script>
+    function handlePhoneNumberSubmission(planId, routerId) {
+      // Your existing JavaScript function for handling phone number submission
+      Swal.fire({
+        title: 'Enter your phone number',
+        input: 'text',
+        inputAttributes: {
+          autocapitalize: 'off'
+        },
+        showCancelButton: true,
+        confirmButtonText: 'Submit',
+        showLoaderOnConfirm: true,
+        preConfirm: (phoneNumber) => {
+          // Simulate an API call
+          return new Promise((resolve) => {
+            setTimeout(() => {
+              resolve();
+            }, 2000);
+          });
+        },
+        allowOutsideClick: () => !Swal.isLoading()
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            title: 'Connected!',
+            text: 'Your phone number has been submitted.',
+            icon: 'success'
+          });
+        }
+      });
+    }
+  </script>
+</body>
+</html>

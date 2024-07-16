@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Neton Hotspot Template - Index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.7/glider.min.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Custom styles */
+    body {
+      background-color: #1a202c; /* Darker background */
+      color: #e2e8f0; /* Lighter text */
+      font-family: 'Roboto', sans-serif; /* Replace with your preferred font */
+    }
+    .sticky-header {
+      background-color: #2d3748; /* Darker header background */
+      color: #e2e8f0; /* Lighter header text */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    }
+    .main-content {
+      padding-top: 6rem; /* Adjust for sticky header */
+    }
+    .section-title {
+      color: #cbd5e0; /* Subdued section title */
+    }
+    .pricing-section {
+      background-color: #2d3748; /* Darker pricing section */
+      color: #e2e8f0; /* Lighter pricing text */
+      padding: 4rem 0; /* Increased padding */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sticky Header -->
+  <header class="sticky-header z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo and title area -->
+        <div class="flex items-center">
+          <img src="logo.png" alt="Your Company Logo" class="h-8 w-8 mr-2">
+          <h1 class="text-xl font-bold">Neton</h1>
+        </div>
+        <!-- Navigation Links and Contact Number -->
+        <nav class="block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#alreadyHavePackage" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Already Paid? Click Here.</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <section class="section-bg">
+      <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-extrabold mb-6 section-title">We Provide Fast, Cheap and Reliable Wifi Connection Near You. Get connected today</h2>
+        <!-- Pricing Section -->
+        <div class="mt-10 pricing-section">
+          <div class="text-center">
+            <h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl sm:leading-9">
+              CHECK OUR PRICING
+            </h3>
+            <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-400 lg:mx-auto">
+              Choose the plan that fits your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="mt-10 max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+                <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                    30 Minutes Unlimited
+                </span>
+                <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                    <span class="text-lg font-medium text-gray-400">ksh</span> 5
+                </div>
+                <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                    30 Mins Unlimited
+                </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+                <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                    onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="1" data-router-id="1">
+                    Click Here To Connect
+                </a>
+            </div>
+        </div>
+    
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+                <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                    1 Hour Unlimited
+                </span>
+                <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                    <span class="text-lg font-medium text-gray-400">ksh</span> 10
+                </div>
+                <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                    1 Hour Unlimited
+                </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+                <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                    onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="2" data-router-id="1">
+                    Click Here To Connect
+                </a>
+            </div>
+        </div>
+    
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-600 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+                <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                    3 Hours Unlimited
+                </span>
+                <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                    <span class="text-lg font-medium text-gray-400">ksh</span> 20
+                </div>
+                <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                    3 Hrs Unlimited
+                </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+                <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                    onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="3" data-router-id="1">
+                    Click Here To Connect
+                </a>
+            </div>
+        </div>
+    
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+                <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                    12 Hours Unlimited
+                </span>
+                <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                    <span class="text-lg font-medium text-gray-400">ksh</span> 30
+                </div>
+                <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                    12 Hrs Unlimited
+                </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+                <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                    onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="4" data-router-id="1">
+                    Click Here To Connect
+                </a>
+            </div>
+        </div>
+    
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+                <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                    1 Day Unlimited
+                </span>
+                <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                    <span class="text-lg font-medium text-gray-400">ksh</span> 30
+                </div>
+                <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                    24 Hrs Unlimited
+                </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+                <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                    onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="5" data-router-id="1">
+                    Click Here To Connect
+                </a>
+            </div>
+        </div>
+      
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+          <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+            <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+              2 days Unlimited
+            </span>
+            <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+              <span class="text-lg font-medium text-gray-400">ksh</span> 60
+            </div>
+            <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+              2 Days Unlimited
+            </p>
+          </div>
+          <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+            <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+               onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="6" data-router-id="1">
+              Click Here To Connect
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadoe-x1 overflow-hidden transform transition duration-500 hover:scale-105">
+          <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+            <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+              3 Days Unlimited
+            </span>
+            <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+              <span class="text-lg font-medium text-gray-400">ksh</span> 90
+            </div>
+            <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+              3 Days Unlimited
+            </p>
+          </div>
+          <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+            <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+               onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="7" data-router-id="1">
+              Click Here To Connect
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+          <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+            <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+              1 Week Unlimited
+            </span>
+            <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+              <span class="text-lg font-medium text-gray-400">ksh</span> 180
+            </div>
+            <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+              1 Week Unlimited
+            </p>
+          </div>
+          <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+            <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+               onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="8" data-router-id="1">
+              Click Here To Connect
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+          <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+            <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+              2 Weeks Unlimited
+            </span>
+            <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+              <span class="text-lg font-medium text-gray-400">ksh</span> 300
+            </div>
+            <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+              14 days Unlimited
+            </p>
+          </div>
+          <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+            <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+               onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="9" data-router-id="1">
+              Click Here To Connect
+            </a>
+          </div>
+        </div>
+        
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+              <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                3 Weeks Unlimited
+              </span>
+              <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                <span class="text-lg font-medium text-gray-400">ksh</span> 400
+              </div>
+              <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                21 days Unlimited
+              </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+              <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                 onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="10" data-router-id="1">
+                Click Here To Connect
+              </a>
+            </div>
+        </div>
+
+        <div class="flex flex-col rounded-lg shadow-xl overflow-hidden transform transition duration-500 hover:scale-105">
+            <div class="px-4 py-5 bg-gradient-to-tr from-gray-700 to-gray-900 text-center">
+              <span class="inline-flex px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase bg-blue-800 text-blue-50">
+                1 Month Unlimited
+              </span>
+              <div class="mt-4 text-4xl leading-none font-extrabold text-yellow-600">
+                <span class="text-lg font-medium text-gray-400">ksh</span> 500
+              </div>
+              <p class="mt-2 text-md leading-5 text-gray-400 text-center">
+                1 Month Unlimited
+              </p>
+            </div>
+            <div class="px-4 pt-4 pb-6 bg-blue-500 text-center">
+              <a href="#" class="inline-block text-blue-800 bg-blue-50 hover:bg-blue-100 focus:outline-none focus:ring-4 focus:ring-blue-500 focus:ring-opacity-50 transform transition duration-150 ease-in-out rounded-lg font-semibold px-3 py-2 text-xs shadow-lg cursor-pointer"
+                 onclick="handlePhoneNumberSubmission(this.getAttribute('data-plan-id'), this.getAttribute('data-router-id')); return false;" data-plan-id="11" data-router-id="1">
+                Click Here To Connect
+              </a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<div id="alreadyHavePackage" class="bg-gray-900 text-white py-24">
+    <div class="max-w-md mx-auto bg-white rounded-lg overflow-hidden shadow-xl">
+        <div class="md:flex">
+            <div class="w-full p-5">
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Already Have an Active Package?</h3>
+                </div>
+                <form id="loginForm" class="form" name="login" action="$(link-login-only)" method="post" $(if chap-id)onSubmit="return doLogin()"$(endif)>
+                    <input type="hidden" name="dst" value="$(link-orig)" />
+                    <input type="hidden" name="popup" value="true" />
+                    <div class="mb-4">
+                        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                        <input id="usernameInput" name="username" type="text" placeholder="Enter your username"
+                            class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-black" />
+                    </div>
+                    <div class="mb-6">
+                        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                        <input id="passwordInput" name="password" type="password" placeholder="Enter your password"
+                            class="mt-1 block w-full px-3 py-2 bg-gray-100 border border-transparent rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm text-black" />
+                    </div>
+                    <div class="mb-6">
+                        <button id="submitBtn"
+                            class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                            type="button">
+                            Click Here To Connect
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mt-10 text-center">
+    <a href="https://neton.freeispradius.com/index.php?_route=login"
+        class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md inline-block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+        Have a voucher code? Click here
+    </a>
+</div>
+
+<div class="mt-10 mx-auto px-4 sm:px-6 lg:px-8">
+    <h3 class="text-center text-3xl font-bold text-white-900 mb-8">What Our Users Say</h3>
+    <div class="glider-contain">
+        <div class="glider">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs md:max-w-sm mx-auto">
+                <img class="w-full h-48 object-cover object-center" src="assets/img/testimonials/testimonials-3.jpg" alt="Testimonial from Otieno Peter">
+                <div class="p-6">
+                    <div class="uppercase text-xs text-indigo-500 font-semibold mb-2">Otieno Peter</div>
+                    <p class="text-gray-700 leading-relaxed">"Switching to this service has been a game changer for me. The connection is reliable and fast, making my online work seamless and efficient."</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs md:max-w-sm mx-auto">
+                <img class="w-full h-48 object-cover object-center" src="assets/img/testimonials/testimonials-2.jpg" alt="Testimonial from Kiveu">
+                <div class="p-6">
+                    <div class="uppercase text-xs text-indigo-500 font-semibold mb-2">Kiveu</div>
+                    <p class="text-gray-700 leading-relaxed">"I've experienced unparalleled support and service. The team goes above and beyond to ensure customer satisfaction. Highly recommend!"</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden max-w-xs md:max-w-sm mx-auto">
+                <img class="w-full h-48 object-cover object-center" src="assets/img/testimonials/testimonials-1.jpg" alt="Testimonial from Anonymous User">
+                <div class="p-6">
+                    <div class="uppercase text-xs text-indigo-500 font-semibold mb-2">Anonymous User</div>
+                    <p class="text-gray-700 leading-relaxed">"Their commitment to quality and speed is evident. My internet experience has been fantastic ever since I made the switch."</p>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Arrows -->
+        <button aria-label="Previous" class="glider-prev absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-8 bg-white rounded-full shadow-lg focus:outline-none">
+            <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </button>
+        <button aria-label="Next" class="glider-next absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-8 bg-white rounded-full shadow-lg focus:outline-none">
+            <svg class="h-6 w-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+        <!-- Pagination Dots -->
+        <div role="tablist" class="glider-dots text-center mt-4"></div>
+    </div>
+</div>
+
+<script>
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        draggable: true,
+        dots: '.dots',
+        arrows: {
+            prev: '.glider-prev',
+            next: '.glider-next'
+        },
+        responsive: [
+            {
+                breakpoint: 775,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            }
+        ]
+    });
+</script>
+<!-- FAQ Section -->
+<div class="mt-10 mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center">
+        <h3 class="text-2xl leading-8 font-extrabold tracking-tight text-white-900 sm:text-3xl sm:leading-9">
+        FREQUENTLY ASKED QUESTIONS Will Be Here
+        </h3>
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-white-500 lg:mx-auto">
+            Everything you need to know before getting started.
+        </p>
+    </div>
+    <div class="mt-6">
+        <dl class="space-y-6">
+            <div class="bg-white rounded-lg shadow-md">
+                <dt class="p-4 cursor-pointer text-lg leading-6 font-medium text-gray-900" onclick="toggleFAQ('faq1')">What is your contact number and how can I reach you?</dt>
+                <dd id="faq1" class="p-4 hidden text-base text-gray-500">Our main line is 0741768886. You can also reach us through email at eramlinkpro@gmail.com. We are available 24/7 via live chat on our website</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow-md">
+                <dt class="p-4 cursor-pointer text-lg leading-6 font-medium text-gray-900" onclick="toggleFAQ('faq2')">What happens if I travel outside your coverage area?</dt>
+                <dd id="faq2" class="p-4 hidden text-base text-gray-500">Your internet access will be limited while outside our coverage zones. However, some plans offer limited data roaming or add-on packages for occasional use in uncovered areas.</dd>
+            </div>
+            <div class="bg-white rounded-lg shadow-md">
+                <dt class="p-4 cursor-pointer text-lg leading-6 font-medium text-gray-900" onclick="toggleFAQ('faq3')">How secure is your hotspot network?</dt>
+                <dd id="faq3" class="p-4 hidden text-base text-gray-500">We prioritize your security with advanced encryption protocols and secure authentication methods. Additionally, our private network is separate from the public internet, minimizing the risk of unauthorized access.</dd>
+            </div>
+        </dl>
+    </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    function autofillLogin() {
+        var phoneNumber = '2547xxxxxxx';
+        var password = '1234';
+        document.querySelector('input[name="username"]').value = phoneNumber;
+        document.querySelector('input[name="password"]').value = password;
+        setTimeout(function() {
+            document.querySelector('button[type="submit"]').click();
+        }, 15000);
+    }
+    autofillLogin();
+});
+</script>
+<script>
+function toggleFAQ(faqId) {
+    var element = document.getElementById(faqId);
+    if (element.style.display === "block") {
+        element.style.display = "none";
+    } else {
+        element.style.display = "block";
+    }
+}
+</script>
+<form id="loginForm" class="form" name="login" action="$(link-login-only)" method="post" $(if chap-id)onSubmit="return doLogin()"$(endif)>
+    <input type="hidden" name="dst" value="$(link-orig)" />
+    <input type="hidden" name="popup" value="true" />
+    <input type="hidden" name="mac" value="$(mac)" />
+    <!-- Rest of the form code -->
+</form>
+
+<!-- Add a container to display the MAC address -->
+<div id="macAddressContainer" class="mt-4">
+    <p>Your MAC Address: <span id="macAddressDisplay"></span></p>
+</div>
+
+<!-- Add a script to retrieve and display the MAC address -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var macAddressInput = document.querySelector('input[name="mac"]');
+        var macAddressDisplay = document.getElementById('macAddressDisplay');
+        
+        if (macAddressInput && macAddressDisplay) {
+            var macAddress = macAddressInput.value;
+            macAddressDisplay.textContent = macAddress;
+        }
+    });
+</script>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            <div class="lg:col-span-1">
+                <h2 class="text-sm font-semibold uppercase tracking-wider">
+                    Contact Us
+                </h2>
+                <ul class="mt-4 space-y-4">
+                    <li>
+                        <span class="block">Address: 2787-40200</span>
+                    </li>
+                    <li>
+                        <span class="block">Email: eramlinkpro@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="block">Phone: 0741768886</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="lg:col-span-1">
+                <h2 class="text-sm font-semibold uppercase tracking-wider">
+                    Quick Links
+                </h2>
+                <ul class="mt-4 space-y-4">
+                    <li><a href="#" class="hover:underline">About Us</a></li>
+                    <li><a href="#" class="hover:underline">Our Services</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Support</a></li>
+                </ul>
+            </div>
+            <div class="lg:col-span-1">
+                <h2 class="text-sm font-semibold uppercase tracking-wider">
+                     Follow Us
+                </h2>
+                <div class="mt-4 space-x-4">
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gray-400"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+            <div class="flex space-x-6 md:order-2">
+                <a href="#" class="text-gray-400 hover:text-gray-300"><span class="sr-only">Facebook</span><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gray-300"><span class="sr-only">Instagram</span><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gray-300"><span class="sr-only">Twitter</span><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-gray-300"><span class="sr-only">LinkedIn</span><i class="fab fa-linkedin-in"></i></a>
+            </div>
+<p class="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1">
+                &copy; 2024 FreeIspRadius. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function formatPhoneNumber(phoneNumber) {
+        if (phoneNumber.startsWith('+')) {
+            phoneNumber = phoneNumber.substring(1);
+        }
+        if (phoneNumber.startsWith('0')) {
+            phoneNumber = '254' + phoneNumber.substring(1);
+        }
+        if (phoneNumber.match(/^(7|1)/)) {
+            phoneNumber = '254' + phoneNumber;
+        }
+        return phoneNumber;
+    }
+
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+
+    function handlePhoneNumberSubmission(planId, routerId) {
+        Swal.fire({
+            title: 'Enter Your Phone Number',
+            input: 'text',
+            inputPlaceholder: 'Your phone number here',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Submit',
+            showLoaderOnConfirm: true,
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("https://sweetalert2.github.io/images/nyan-cat.gif")
+                center left
+                no-repeat
+            `,
+            preConfirm: (phoneNumber) => {
+                var formattedPhoneNumber = formatPhoneNumber(phoneNumber);
+                var macAddress = document.querySelector('input[name="mac"]').value;
+                var lastFourChars = macAddress.slice(-4);
+                var username = formattedPhoneNumber + '-' + lastFourChars;
+                try {
+                    localStorage.setItem('phoneNumber', formattedPhoneNumber);
+                    localStorage.setItem('lastFourChars', lastFourChars);
+                } catch (e) {
+                    setCookie('phoneNumber', formattedPhoneNumber, 1);
+                    setCookie('lastFourChars', lastFourChars, 1);
+                }
+                document.getElementById('usernameInput').value = username;
+
+                return fetch('https://neton.freeispradius.com/index.php?_route=plugin/CreateHotspotuser&type=grant', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({phone_number: formattedPhoneNumber, plan_id: planId, router_id: routerId, mac_address: lastFourChars}),
+                })
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.status === 'error') throw new Error(data.message);
+
+                    // Set the expiration time for the paymentSubmitted flag (2 minutes from now)
+                    var expirationTime = new Date().getTime() + (1 * 60 * 1000);
+                    try {
+                        localStorage.setItem('paymentSubmittedExpiration', expirationTime.toString());
+                        localStorage.setItem('paymentSubmitted', 'true');
+                    } catch (e) {
+                        setCookie('paymentSubmittedExpiration', expirationTime.toString(), 1);
+                        setCookie('paymentSubmitted', 'true', 1);
+                    }
+
+                    // Start confirming payment
+                    startConfirmingPayment();
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: error.message,
+                    });
+                });
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        });
+    }
+
+    function startConfirmingPayment() {
+        var confirmPayment = function() {
+            Swal.fire({
+                title: 'Confirming Payment',
+                html: 'Please wait while we confirm your payment and log you in...',
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                allowEnterKey: false,
+                showConfirmButton: false,
+                onBeforeOpen: () => {
+                    Swal.showLoading();
+                }
+            });
+
+            // Attempt to log in by clicking the submit button
+            document.getElementById('submitBtn').click();
+
+            // Check if payment has been confirmed
+            checkPaymentStatus();
+        };
+
+        var checkPaymentStatus = function() {
+            setTimeout(function() {
+                var usernameInput = document.getElementById('usernameInput');
+                if (usernameInput.value) {
+                    var phoneNumber = usernameInput.value.split('-')[0];
+                    $.ajax({
+                        url: 'https://neton.freeispradius.com/index.php?_route=plugin/CreateHotspotuser&type=verify',
+                        method: "POST",
+                        data: {phone_number: phoneNumber},
+                        dataType: "json",
+                        success: function(data) {
+                            // Response handling code
+                            if (data.Resultcode === "3") {
+                                // Payment successful and user redirected
+                                console.log("Payment successful. Redirecting...");
+                                // Perform any necessary actions upon successful payment
+                                Swal.close();
+                                refreshData(); // Example function to handle post-payment actions
+                            } else if (data.Resultcode === "2") {
+                                // Payment failed or cancelled
+                                console.log("Payment failed or cancelled. Error: " + data.Message);
+                                // Perform any necessary actions upon payment failure or cancellation
+                                Swal.fire({
+                                    icon: 'error',
+                                    title: 'Payment Error',
+                                    text: 'Payment failed or was cancelled.',
+                                });
+                                Swal.close();
+                            } else if (data.Resultcode === "1") {
+                                // Payment pending
+                                console.log("Payment pending. Message: " + data.Message);
+                                // Continue checking
+                                checkPaymentStatus();
+                            } else {
+                                // Unknown response code
+                                console.log("Unknown response code: " + data.Resultcode);
+                                // Continue checking
+                                checkPaymentStatus();
+                            }
+                        },
+                        error: function(xhr, textStatus, errorThrown) {
+                            console.log("Error: " + errorThrown);
+                            // Perform any necessary error handling
+                            Swal.fire({
+                                icon: 'error',
+                                title: 'Oops...',
+                                text: 'An error occurred while confirming payment.',
+                            });
+                            Swal.close();
+                        }
+                    });
+                }
+            }, 3000);
+        };
+
+        // Start confirming payment
+        confirmPayment();
+    }
+
+    function refreshData() {
+        function refreshDataInternal() {
+            var usernameInput = document.getElementById('usernameInput');
+            if (usernameInput.value) {
+                var phoneNumber = usernameInput.value.split('-')[0];
+                $.ajax({
+                    url: 'https://neton.freeispradius.com/index.php?_route=plugin/CreateHotspotuser&type=verify',
+                    method: "POST",
+                    data: {phone_number: phoneNumber},
+                    dataType: "json",
+                    success: function(data) {
+                        // Response handling code
+                        if (data.Resultcode === "3") {
+                            // Payment successful and user redirected
+                            console.log("Payment successful. Redirecting...");
+                            // Perform any necessary actions upon successful payment
+                        } else if (data.Resultcode === "2") {
+                            // Payment failed or cancelled
+                            console.log("Payment failed or cancelled. Error: " + data.Message);
+                            // Perform any necessary actions upon payment failure or cancellation
+                            // Clear the payment submission flags from localStorage
+                            try {
+                                localStorage.removeItem('paymentSubmitted');
+                                localStorage.removeItem('paymentSubmittedExpiration');
+                            } catch (e) {
+                                setCookie('paymentSubmitted', '', -1);
+                                setCookie('paymentSubmittedExpiration', '', -1);
+                            }
+                        } else if (data.Resultcode === "1") {
+                            // Payment pending
+                            console.log("Payment pending. Message: " + data.Message);
+                            // Perform any necessary actions while payment is pending
+                        } else {
+                            // Unknown response code
+                            console.log("Unknown response code: " + data.Resultcode);
+                        }
+                    },
+                    error: function(xhr, textStatus, errorThrown) {
+                        console.log("Error: " + errorThrown);
+                        // Perform any necessary error handling
+                    }
+                });
+            }
+        }
+        var refreshInterval = setInterval(refreshDataInternal, 2000);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var phoneNumber, lastFourChars;
+        try {
+            phoneNumber = localStorage.getItem('phoneNumber');
+            lastFourChars = localStorage.getItem('lastFourChars');
+        } catch (e) {
+            phoneNumber = getCookie('phoneNumber');
+            lastFourChars = getCookie('lastFourChars');
+        }
+        if (phoneNumber && lastFourChars) {
+            var username = phoneNumber + '-' + lastFourChars;
+            document.getElementById('usernameInput').value = username;
+        }
+
+        var submitBtn = document.getElementById('submitBtn');
+        if (submitBtn) {
+            submitBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                document.getElementById('loginForm').submit();
+            });
+        }
+
+        // Check if payment has been submitted and if the expiration time has not passed
+        var paymentSubmitted, paymentSubmittedExpiration, currentTime;
+        try {
+            paymentSubmitted = localStorage.getItem('paymentSubmitted');
+            paymentSubmittedExpiration = localStorage.getItem('paymentSubmittedExpiration');
+            currentTime = new Date().getTime();
+        } catch (e) {
+            paymentSubmitted = getCookie('paymentSubmitted');
+            paymentSubmittedExpiration = getCookie('paymentSubmittedExpiration');
+            currentTime = new Date().getTime();
+        }
+
+        if (paymentSubmitted === 'true' && paymentSubmittedExpiration && currentTime < parseInt(paymentSubmittedExpiration)) {
+            // Start confirming payment
+            startConfirmingPayment();
+        } else {
+            // Remove the paymentSubmitted and paymentSubmittedExpiration flags from localStorage
+            try {
+                localStorage.removeItem('paymentSubmitted');
+                localStorage.removeItem('paymentSubmittedExpiration');
+            } catch (e) {
+                setCookie('paymentSubmitted', '', -1);
+                setCookie('paymentSubmittedExpiration', '', -1);
+            }
+        }
+    });
+</script>
